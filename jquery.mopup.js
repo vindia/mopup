@@ -3,9 +3,10 @@
         init: function(options) { 
             // Default settings
             var settings = {
-                'backgroundColor' : '#333132',
-                'color' : '#FFF67C',
-                'borderTopColor' : '#282728'
+                'backgroundColor': '#333132',
+                'color': '#FFF67C',
+                'borderTopColor': '#282728',
+                'animate': true
             };
             // Override defaults when needed
             if (options) { 
@@ -29,6 +30,14 @@
             'max-width': '400px',
             'border-top': '4px solid ' + settings.borderTopColor 
         });
+        
+        // Do a real pop-up animation unless disabled
+        if(settings.animate) {
+            var jokeBox = $('#mopup');
+            var boxHeight = (parseInt(jokeBox.height()) + parseInt(jokeBox.css('padding-top')) + parseInt(jokeBox.css('padding-bottom'))) + 'px';
+            jokeBox.css({'bottom': '-' + boxHeight});
+            jokeBox.animate({'bottom': 0}, 380);
+        }
     }
             
     $.fn.mopup = function(method) {
