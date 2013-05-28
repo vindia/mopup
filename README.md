@@ -8,7 +8,7 @@ The name is a [portmonteau](http://en.wikipedia.org/wiki/Portmanteau "Wikipedia"
 I was bored and wanted to write a jQuery plugin. This was my first attempt and I used lots of boilerplate code that can be found at the [authoring a jQuery plugin page](http://docs.jquery.com/Plugins/Authoring "jQuery Documentation") in the jQuery documentation.
 
 ## Usage
-Regular usage is as follows
+Regular usage is as follows:
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="jquery.mopup.js"></script>
